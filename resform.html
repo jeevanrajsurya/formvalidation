@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./../style css/resform.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="left-section">
+            <h1>Student<br>Registration<br>Form</h1>
+        </div>
+
+        <div class="right-section">
+            <form class="form-box" id="st_form">
+                <h2>Registration Form</h2>
+
+                <!-- Full name -->
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter full name">
+                <span id="fullname" style="font-size: 12px;color: tomato;"></span>
+
+                <!-- Email -->
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter email address">
+                <span id="emailaddress" style="font-size: 12px;color: tomato;"></span>
+
+                <!-- Password -->
+                <label>Password</label>
+                <input type="password" id="pass" placeholder="Enter password">
+                <span id="emailpassword" style="font-size: 12px;color: tomato;"></span>
+
+                <!-- Two column row -->
+                <div class="two-col">
+                    <div>
+                        <label>Mobile Number</label>
+                        <input type="text"  placeholder="Enter mobile number">
+                        <span id="mobileno" style="font-size: 12px;color: tomato;"></span>
+                    </div>
+
+                    <div>
+                        <label>Birth Date</label>
+                        <input type="date" id="dob">
+                    </div>
+                </div>
+
+                <!-- Gender -->
+                <label>Gender</label>
+                <div class="gender-box">
+                    <label><input type="radio" name="gender"  > Male</label>
+                    <label><input type="radio" name="gender"  > Female</label>
+                    <label><input type="radio" name="gender"  > Other</label>
+                </div>
+
+                <!-- Address -->
+                <label>Address</label>
+                <input type="text" id="address" placeholder="Enter address">
+
+                <!-- Country + Postal -->
+                <div class="two-col">
+                    <div>
+                        <label>Country</label>
+                        <select id="country">
+                            <option>Select country</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Postal Code</label>
+                        <input type="text" id="postal" placeholder="Enter postal code">
+                    </div>
+                </div>
+
+               <!-- Department -->
+                <div class="department-block">
+                    <label>Department</label>
+                    <div class="checkbox-row">
+                        <label><input type="checkbox"> CSE</label>
+                        <label><input type="checkbox"> IT</label>
+                        <label><input type="checkbox"> ECE</label>
+                        <label><input type="checkbox"> CIVIL</label>
+                        <label><input type="checkbox"> MECH</label>
+                    </div>
+                </div>
+
+            <!-- Student File -->
+            <div class="file-block">
+                <label>Marksheet File</label>
+                <input type="file">
+            </div>
+
+            <!-- Terms -->
+            <label class="terms">
+                    <input type="checkbox"> I agree to the terms & conditions
+            </label>
+
+
+            <button type="submit" class="submit-btn">Submit</button>
+
+            </form>
+        </div>
+    </div>
+    <span id="Result" style="color:black;font-size: 20px;"></span>
+
+    <script src="./../jsscript/resform.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
